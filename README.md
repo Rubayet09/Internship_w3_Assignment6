@@ -1,11 +1,12 @@
 # Internship_w3_Assignment6
 
+
 # Development of a Property Management System Using Django Internship Project A6
 # Table of Contents 
 1. [Overview](#overview) 
 2. [Key Features](#key-features) 
 3.  [Technologies Used](#technologies-used) 
-4. [How to Use](#how-to-use) 
+4. [Usage for Admin/User](#usage-for-admin/user)
 5. [Development Setup](#development-setup) 
 6. [Project Structure](#project-structure) 
 7. [Author](#author)
@@ -41,16 +42,16 @@ with PostGIS extensions, allowing geospatial data handling and integration for p
 
 ---
 
-## How to Use 
+## Usage for Admin/User
 
 ### For Admin Users: 
 1. Log in to the Django admin panel using your credentials. 
 2. Manage Locations: - Create new locations manually or import them via CSV. 
-3. Manage Accommodations: - Add, edit, and view accommodations with geospatial data and amenities. 
+3. Manage Accommodations: - Add, edit, delete, and view accommodations with geospatial data and amenities. 
 4. Localize Accommodations: - Add descriptions and policies in multiple languages. 
 
 ### For Regular Users: 
-1. Submit property sign-up requests through the public-facing page (if implemented). 
+1. Submit property sign-up requests through the signup page. 
 2. Manage personal property data as per access permissions. 
 
 --- 
@@ -93,12 +94,24 @@ python manage.py createsuperuser
 docker-compose up
  ```
 
-### How to Use
+## How to Use
 1. Navigate to http://localhost:8000/admin/login/?next=/admin/
 2. Input the Username and Password used to create the superuser.
 3. Go to polls/Locations and click on import CSV button to import the csv files. Then, you can see the list of locations, Select and DELETE locations, Filter locations.
 4. Go to polls/Accomodations then add by filling up all the fields accordingly, see the list of Accomodations, Select and DELETE, Filter.
-5. Go to polls/Localize accomodations then add by filling up all the fields accordingly. If you choose Language 'bn', you need to write 'Description:' "পর্বতের মাঝে একটি আরামদায়ক কেবিন, যা একান্তে ছুটি কাটানোর জন্য আদর্শ।" This field will not take "A cozy cabin in the mountains, ideal for a secluded getaway." for 'bn'. Also, for the 'Policy' input value-  {"পশু": "পশু অনুমোদিত, তবে অতিরিক্ত পরিষ্কার করার জন্য ফি প্রযোজ্য।", "চেক": "বিকাল ৩ টা", "চেক-আউট": "দুপুর ১২ টা", "বাতিলকরণ": "চেক-ইনের ৭ দিনের মধ্যে বাতিল করা হলে সম্পূর্ণ ফেরত।"} and save. Then, see the list of Localize accomodations, Select and DELETE if needed.
+5. Go to polls/Localize accomodations then add by filling up all the fields accordingly. If you choose Language 'bn', you need to write- 'Description:' 
+``` bash
+"পর্বতের মাঝে একটি আরামদায়ক কেবিন, যা একান্তে ছুটি কাটানোর জন্য আদর্শ।"
+```
+This field will not take "A cozy cabin in the mountains, ideal for a secluded getaway." for 'bn'. 
+Also, for the 'Policy' input value-  
+ ``` bash
+ {"পশু": "পশু অনুমোদিত, তবে অতিরিক্ত পরিষ্কার করার জন্য ফি প্রযোজ্য।", 
+ "চেক": "বিকাল ৩ টা", 
+ "চেক-আউট": "দুপুর ১২ টা", 
+ "বাতিলকরণ": "চেক-ইনের ৭ দিনের মধ্যে বাতিল করা হলে সম্পূর্ণ ফেরত।"} 
+ ```
+ and save. Then, see the list of Localize accomodations, Select and DELETE if needed.
 6. For Regular user- navigate to http://localhost:8000/signup/ and input the required fields.
 7. Then admin will authenticate the user and mark as staff and make him a property owner who can access his own properties to create, delete or edit.
 
@@ -114,7 +127,46 @@ NB: The test covers 77% Code Coverage.
 python manage.py generate_sitemap
  ```
 
-
+---
+## Project Structure
+```
+DJANGO PROJECT
+└── djangotutorial
+    ├── mysite
+    │   ├── __pycache__
+    │   ├── __init__.py
+    │   ├── asgi.py
+    │   ├── settings.py
+    │   ├── urls.py
+    │   └── wsgi.py
+    ├── polls
+    │   └── __pycache__
+	   ├── commands
+    │   │	├── __init__.py
+    │   │	├── generate_sitemap.py
+    │   └── init.py
+    ├── migrations
+    │   ├── __init__.py
+    │   └── 0001_initial.py
+    ├── templates
+    │   ├── signup.html
+    │   └── admin
+    ├── __init__.py
+    ├── admin.py
+    ├── apps.py
+    ├── models.py
+    ├── tests.py
+    ├── urls.py
+    └── views.py
+	   ├── docker-compose.yml
+    ├── Dockerfile
+    ├── locatins-IN.csv
+    ├── locations-BD.csv
+    ├── locations-US.csv
+    ├── manage.py
+    ├── pytest.ini
+    └── requirements.txt
+```
 
 ## Author
 
