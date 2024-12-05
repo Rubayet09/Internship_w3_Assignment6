@@ -1,0 +1,6 @@
+id,title,center,location_type,country_code,state_abbr,city
+11,Dhaka,"POINT(90.4125 23.8103)",city,BD,13,Dhaka
+12,Chittagong,"POINT(91.7832 22.3569)",city,BD,20,Chittagong
+13,Khulna,"POINT(89.5186 22.8456)",city,BD,21,Khulna
+14,Rajshahi,"POINT(88.6032 24.3634)",city,BD,22,Rajshahi
+15,Sylhet,"POINT(91.8717 24.8949)",city,BD,26,Sylhet

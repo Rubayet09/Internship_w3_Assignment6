@@ -1,0 +1,89 @@
+[
+    {
+        "country": "IN",
+        "name": "IN",
+        "locations": [
+            {
+                "Bengaluru": "in/bengaluru"
+            },
+            {
+                "Chennai": "in/chennai"
+            },
+            {
+                "Delhi": "in/delhi"
+            },
+            {
+                "Mumbai": "in/mumbai"
+            }
+        ]
+    },
+    {
+        "country": "US",
+        "name": "US",
+        "locations": [
+            {
+                "Chicago": "us/chicago"
+            },
+            {
+                "Houston": "us/houston"
+            },
+            {
+                "Los Angeles": "us/los-angeles"
+            },
+            {
+                "New York City": "us/new-york-city"
+            },
+            {
+                "Phoenix": "us/phoenix"
+            }
+        ]
+    },
+    {
+        "country": "BD",
+        "name": "BD",
+        "locations": [
+            {
+                "Chittagong": "bd/chittagong"
+            },
+            {
+                "Dhaka": "bd/dhaka"
+            },
+            {
+                "Khulna": "bd/khulna"
+            },
+            {
+                "Rajshahi": "bd/rajshahi"
+            },
+            {
+                "Sylhet": "bd/sylhet"
+            }
+        ]
+    },
+    {
+        "country": "55",
+        "name": "55",
+        "locations": [
+            {
+                "Hotel Nirvana": "55/hotel-nirvana"
+            }
+        ]
+    },
+    {
+        "country": "88",
+        "name": "88",
+        "locations": [
+            {
+                "Hotel Sarina": "88/hotel-sarina"
+            }
+        ]
+    },
+    {
+        "country": "99",
+        "name": "99",
+        "locations": [
+            {
+                "laaa": "99/laaa"
+            }
+        ]
+    }
+]

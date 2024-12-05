@@ -1,0 +1,6 @@
+id,title,center,location_type,country_code,state_abbr,city
+6,Delhi,"POINT(77.1025 28.7041)",city,IN,DL,Delhi
+7,Mumbai,"POINT(72.8777 19.0760)",city,IN,MH,Mumbai
+8,Kolkata,"POINT(88.3639 22.5726)",city,IN,WB,Kolkata
+9,Bengaluru,"POINT(77.5946 12.9716)",city,IN,KAR,Bengaluru
+10,Chennai,"POINT(80.2785 13.0827)",city,IN,TN,Chennai

@@ -1,0 +1,8 @@
+id,title,center,location_type,country_code,state_abbr,city
+1,New York City,"POINT(-74.0060 40.7128)",city,US,NY,New York
+2,Los Angeles,"POINT(-118.2437 34.0522)",city,US,CA,Los Angeles
+3,Chicago,"POINT(-87.6298 41.8781)",continent,US,IL,Chicago
+4,Houston,"POINT(-95.3698 29.7604)",city,US,TX,Houston
+5,Phoenix,"POINT(-112.0740 33.4484)",state,US,AZ,Phoenix
+
+
