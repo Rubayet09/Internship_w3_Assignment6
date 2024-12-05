@@ -61,13 +61,14 @@ with PostGIS extensions, allowing geospatial data handling and integration for p
 
 Ensure the following are installed on your system:
 
-- Python 3.10 or higher 
+- Python 3.10 or higher
+- Django
 - PostgreSQL with PostGIS extension 
 - Docker 
 
 ### Steps: 1. Clone the repository:
  ```bash 
-git clone https://github.com/Rubayet09/Internship_w3_Assignment3.git cd Internship_w3_Assignment3
+git clone https://github.com/Rubayet09/Internship_w3_Assignment6.git cd Internship_w3_Assignment6
  ```
 
 ### Steps: 2. Create venv and install dependencies:
